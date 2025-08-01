@@ -1,0 +1,17 @@
+{
+  "name": "codedev",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "ashutosh",
+  "type": "commonjs",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.17.0"
+  }
+}
