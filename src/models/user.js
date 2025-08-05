@@ -62,12 +62,13 @@ const userSchema = new mongoose.Schema({
       skills: {
         type: [String],
       },
+      
     },
     {
       timestamps: true,
     }  
   );
-
+   userSchema.index({firstName: 1 , lastName: 1});
 
  userSchema.methods.getJWT = async function () {
   const user = this;
