@@ -12,15 +12,14 @@ PATCH/profile/edit
 PATCH/profile/password // forgot password api
 
 # connectionRequestRouter
-post/request/send/interested/:userId
-post/request/send/ignored/:userId
-POST/request/review/accepted/:requestId
-POST/request/review/reject/:requestId
+post/request/send/:status/:userId
+post/request/review/:status/:requestId
+
 
 # userRouter
-GET/connections
-GET/requests/received
-GET/feed - Gets you the profile of other 
+GET/user/requests/received
+GET/user/connections
+GET/user/feeed - Gets you the profile of other users on platform
 
 
 
